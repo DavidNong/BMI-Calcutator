@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="500.0">
+         <children>
+            <Label layoutX="125.0" layoutY="48.0" prefHeight="36.0" prefWidth="223.0" text="BMI Calculator" textFill="#000000f5" wrapText="true">
+               <font>
+                  <Font name="Arial" size="33.0" />
+               </font>
+               <effect>
+                  <Glow level="0.9">
+                     <input>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </input>
+                  </Glow>
+               </effect>
+            </Label>
+            <TextField fx:id="theight" layoutX="108.0" layoutY="125.0" prefHeight="36.0" prefWidth="292.0" promptText="Enter your height in meters">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tweight" layoutX="108.0" layoutY="199.0" prefHeight="36.0" prefWidth="292.0" promptText="Enter your weight in kgs">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Button layoutX="228.0" layoutY="283.0" mnemonicParsing="false" onAction="#buttonclicked" prefHeight="29.0" prefWidth="120.0" text="Show BMI">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="lbmi" layoutX="94.0" layoutY="373.0" prefHeight="38.0" prefWidth="312.0" text="BMI">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lresults" layoutX="94.0" layoutY="428.0" prefHeight="36.0" prefWidth="312.0" text="Results">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
